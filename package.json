@@ -1,0 +1,62 @@
+{
+  "name": "twenty-agent-cli",
+  "version": "0.1.0",
+  "description": "Agent-native CLI and stdio MCP bridge for Twenty CRM — operate any instance from the shell or AI assistants",
+  "type": "module",
+  "license": "MIT",
+  "author": "Brandon Charleson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcharleson/twenty-agent-cli.git"
+  },
+  "homepage": "https://github.com/bcharleson/twenty-agent-cli#readme",
+  "bugs": {
+    "url": "https://github.com/bcharleson/twenty-agent-cli/issues"
+  },
+  "keywords": [
+    "twenty",
+    "twenty-crm",
+    "crm",
+    "mcp",
+    "model-context-protocol",
+    "cli",
+    "agent",
+    "ai",
+    "graphql",
+    "rest-api"
+  ],
+  "bin": {
+    "twenty-agent": "./bin/twenty-agent.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli/main.ts",
+    "dev:serve": "tsx src/agent/main.ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "docs",
+    "examples",
+    "AGENTS.md",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "commander": "^13.1.0",
+    "dotenv": "^16.5.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

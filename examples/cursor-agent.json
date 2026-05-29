@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "twenty-crm": {
+      "command": "npx",
+      "args": ["-y", "twenty-agent-cli", "serve"],
+      "env": {
+        "TWENTY_BASE_URL": "https://crm.example.com",
+        "TWENTY_API_KEY": "YOUR_API_KEY"
+      }
+    }
+  }
+}
