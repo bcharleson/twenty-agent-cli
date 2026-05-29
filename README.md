@@ -150,6 +150,7 @@ See [AGENTS.md](./AGENTS.md) for agent workflow guidance and [docs/COMMAND-REFER
 | [docs/COMMAND-REFERENCE.md](./docs/COMMAND-REFERENCE.md) | Every CLI command, flag, and MCP tool |
 | [docs/API-REFERENCE.md](./docs/API-REFERENCE.md) | HTTP endpoints, auth, rate limits |
 | [docs/API-COVERAGE.md](./docs/API-COVERAGE.md) | Coverage matrix vs Twenty server API |
+| [CHANGELOG.md](./CHANGELOG.md) | Release history |
 | [CONTRIBUTING.md](./CONTRIBUTING.md) | Development and PR guidelines |
 
 ### Endpoint summary
